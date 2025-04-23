@@ -22,9 +22,6 @@ The user interface includes a sidebar for navigation between views such as "My D
 - Authentication and cloud sync: Firebase Auth or similar service
 
 ### Repository Structure (initial)
-bash
-Copy
-Edit
 /src
   /components      - Reusable UI elements
   /views           - Page layouts
