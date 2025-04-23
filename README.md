@@ -17,8 +17,11 @@ The user interface includes a sidebar for navigation between views such as "My D
 
 ### Planned Technologies
 Frontend: HTML, CSS, JavaScript (framework to be determined)
+
 Backend: Node.js with Express or an alternative backend framework
+
 Database: MongoDB, Firebase, or Supabase (TBD)
+
 Authentication and cloud sync: Firebase Auth or similar service
 
 ### Repository Structure (initial)
