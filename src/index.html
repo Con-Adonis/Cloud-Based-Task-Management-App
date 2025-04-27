@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Task Creator</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="task-card">
-    <h2>Create a Task</h2>
-    <form id="taskForm">
-      <label for="title">Task Title</label>
-      <input type="text" id="title" placeholder="Enter task title" required>
-
-      <label for="description">Description</label>
-      <textarea id="description" placeholder="Add details about the task"></textarea>
-
-      <label for="dueDate">Due Date</label>
-      <input type="date" id="dueDate">
-
-      <label for="assignedTo">Assigned To</label>
-      <input type="text" id="assignedTo" placeholder="Person's name">
-
-      <div class="checkbox-group">
-        <input type="checkbox" id="important">
-        <label for="important">Mark as Important</label>
-      </div>
-
-      <button type="submit">Create Task</button>
+  <div class="top-bar">
+    <form id="task-form">
+      <input type="text" id="task-title" placeholder="Title" required />
+      <input type="text" id="task-desc" placeholder="Description" />
+      <input type="date" id="task-due" />
+      <input type="text" id="task-person" placeholder="Assigned To" />
+      <select id="task-priority">
+        <option value="">Priority</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button type="submit">Add Task</button>
     </form>
+  </div>
+
+  <div class="container">
+    <div class="main-content">
+      <ul id="task-list"></ul>
+    </div>
+    <div class="sidebar">
+      <h3>Filters</h3>
+      <label><input type="checkbox" id="filter-important" /> Important</label>
+      <label><input type="checkbox" id="filter-myday" /> My Day</label>
+    </div>
   </div>
 
   <script src="script.js"></script>
